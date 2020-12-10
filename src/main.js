@@ -8,6 +8,7 @@ import '@/plugins/vant'
 
 //引入rem布局
 import 'amfe-flexible'
+import 'vant/lib/index.less';
 //引入Icon样式
 import './styles/index.less'
 Vue.config.productionTip = false

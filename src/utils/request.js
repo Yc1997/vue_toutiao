@@ -1,13 +1,18 @@
 import axios from 'axios'
-
+import store from '@/store/'
 const request = axios.create({
-  baseURL: 'http://ttapi.research.itcast.cn',
+  baseURL: 'http://ttapi.research.itcast.cn/',
   timeout: 5000,
 })
 
 // 添加请求拦截器
 request.interceptors.request.use(function (config) {
   // 在发送请求之前做些什么
+  const { user } = store.state
+  if (user) {
+    //给请求拦截器添加header头
+    config.headers.Authorization = `Bearer ${user.token}`
+  }
   return config;
 
 }, function (error) {
