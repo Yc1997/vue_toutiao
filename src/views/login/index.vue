@@ -58,6 +58,7 @@
 import { login, sendSms } from "@/api/login";
 import { Toast } from "vant";
 export default {
+  name: "login",
   data() {
     return {
       user: {
@@ -133,6 +134,7 @@ export default {
     },
     //表单验证不通过触发的事件，事件就有一个参数event
     formFailed(res) {
+      console.log(res);
       if (res.errors) {
         this.$toast({
           message: res.errors[0].message,

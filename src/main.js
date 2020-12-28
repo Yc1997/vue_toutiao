@@ -11,6 +11,7 @@ import 'amfe-flexible'
 import 'vant/lib/index.less';
 //引入Icon样式
 import './styles/index.less'
+import './plugins/day'
 Vue.config.productionTip = false
 
 new Vue({

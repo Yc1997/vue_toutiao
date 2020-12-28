@@ -16,7 +16,9 @@
         </div>
         <div slot="title" class="dName">{{ userInfo.name }}</div>
         <div slot="right-icon">
-          <van-button size="mini" round>编辑资料</van-button>
+          <van-button size="mini" round @click="$router.push('user-details')"
+            >编辑资料</van-button
+          >
         </div>
       </van-cell>
       <!-- 个人功能 -->

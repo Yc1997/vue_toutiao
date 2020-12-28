@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button, Tabbar, TabbarItem, NavBar, Cell, Icon, Form, Field, CellGroup, CountDown, Toast, Image, Grid, GridItem, Dialog } from 'vant'
+import { Button, Tabbar, TabbarItem, NavBar, Cell, Icon, Form, Field, CellGroup, CountDown, Toast, Image, Grid, GridItem, Dialog, Tabs, Tab, List, PullRefresh, Popup, Search, Loading, Divider, Area, Picker, DatetimePicker } from 'vant'
 
 
 Vue.use(NavBar)
@@ -17,3 +17,14 @@ Vue.use(Image)
 Vue.use(Grid)
 Vue.use(GridItem)
 Vue.use(Dialog)
+Vue.use(Tabs)
+Vue.use(Tab)
+Vue.use(List)
+Vue.use(PullRefresh)
+Vue.use(Popup)
+Vue.use(Search)
+Vue.use(Loading)
+Vue.use(Divider)
+Vue.use(Area)
+Vue.use(Picker)
+Vue.use(DatetimePicker)
